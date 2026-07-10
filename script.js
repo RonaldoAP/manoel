@@ -69,7 +69,7 @@
 
   /* --- Reveal ao rolar --- */
   var targets = document.querySelectorAll(
-    '.section-head, .hero-copy, .learn-card, .day-card, .video-card, .testi-card, .deliver-item, .price-card, .faq-item, .esp-copy, .credbar'
+    '.section-head, .hero-copy, .learn-card, .day-card, .video-card, .testi-card, .deliver-item, .price-card, .faq-item, .esp-copy, .esp-visual, .ctx-copy, .ctx-visual, .credbar'
   );
   targets.forEach(function (el) { el.classList.add('reveal'); });
 

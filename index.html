@@ -7,7 +7,7 @@
   <meta name="description" content="Em um dia, receba o mapa para reconhecer os registros de gestação e nascimento que seus pacientes já mostram em cada sessão. Com Manoel Augusto." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -64,6 +64,10 @@
           <div class="portrait" role="img" aria-label="Manoel Augusto">
             <span class="portrait-label">Manoel Augusto</span>
           </div>
+          <span class="float-chip chip-1">"sem saída"</span>
+          <span class="float-chip chip-2">"sempre pressionado"</span>
+          <span class="float-chip chip-3">memória implícita</span>
+          <span class="float-chip chip-4">"não faço nada direito"</span>
         </div>
       </div>
 
@@ -77,29 +81,54 @@
       </div>
     </section>
 
+    <!-- ===================== MARQUEE ===================== -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Terapeuta 360</span><span class="mq-dot">◆</span>
+        <span>Gestação e nascimento</span><span class="mq-dot">◆</span>
+        <span>Memória implícita</span><span class="mq-dot">◆</span>
+        <span>Prática clínica</span><span class="mq-dot">◆</span>
+        <span>Terapeuta 360</span><span class="mq-dot">◆</span>
+        <span>Gestação e nascimento</span><span class="mq-dot">◆</span>
+        <span>Memória implícita</span><span class="mq-dot">◆</span>
+        <span>Prática clínica</span><span class="mq-dot">◆</span>
+      </div>
+    </div>
+
     <!-- ===================== BLOCO 2 · CONTEXTO ===================== -->
     <section class="section contexto" id="contexto">
-      <div class="container narrow">
-        <span class="eyebrow">O contexto</span>
-        <h2 class="section-title">O padrão que resiste não está na infância, nem no transgeracional</h2>
-        <div class="prose">
-          <p>
-            Seu paciente entende a origem do problema. Já fez o trabalho na infância, no transgeracional,
-            na queixa que ele mesmo trouxe. Sente alívio na sessão. E na semana seguinte, o padrão está de volta.
-          </p>
-          <p>
-            Isso acontece porque uma parte decisiva do que molda um comportamento nunca vira lembrança.
-            Fica registrada como memória implícita, formada na gestação e no nascimento, antes da linguagem existir.
-            Entender a história não é o mesmo que elaborar o que ficou registrado nela.
-          </p>
-          <p class="prose-highlight">
-            A infância e o transgeracional confirmam o padrão. Não é onde ele começa.
+      <div class="container ctx-grid">
+        <div class="ctx-visual">
+          <div class="ctx-image" role="img" aria-label="Sessão de terapia">
+            <span class="ctx-image-tag">Em cada sessão</span>
+          </div>
+          <div class="ctx-badge">
+            <span class="ctx-badge-num">antes da<br>linguagem</span>
+            <span class="ctx-badge-label">é onde o padrão se forma</span>
+          </div>
+        </div>
+        <div class="ctx-copy">
+          <span class="eyebrow">O contexto</span>
+          <h2 class="section-title">O padrão que resiste não está na infância, nem no transgeracional</h2>
+          <div class="prose">
+            <p>
+              Seu paciente entende a origem do problema. Já fez o trabalho na infância, no transgeracional,
+              na queixa que ele mesmo trouxe. Sente alívio na sessão. E na semana seguinte, o padrão está de volta.
+            </p>
+            <p>
+              Isso acontece porque uma parte decisiva do que molda um comportamento nunca vira lembrança.
+              Fica registrada como memória implícita, formada na gestação e no nascimento, antes da linguagem existir.
+              Entender a história não é o mesmo que elaborar o que ficou registrado nela.
+            </p>
+            <p class="prose-highlight">
+              A infância e o transgeracional confirmam o padrão. Não é onde ele começa.
+            </p>
+          </div>
+          <p class="para-quem">
+            <span>Para quem é</span>
+            terapeutas, psicólogos e consteladores com prática clínica ativa que já fazem um bom trabalho e sentem que falta uma camada.
           </p>
         </div>
-        <p class="para-quem">
-          <span>Para quem é</span>
-          terapeutas, psicólogos e consteladores com prática clínica ativa que já fazem um bom trabalho e sentem que falta uma camada.
-        </p>
       </div>
     </section>
 
@@ -201,6 +230,7 @@
           </div>
           <button class="carousel-btn next" aria-label="Próximo">&#8594;</button>
         </div>
+        <p class="testi-note">Espaço reservado para os vídeos de entrevistas do Manoel.</p>
       </div>
     </section>
 
@@ -303,24 +333,33 @@
     <!-- ===================== BLOCO 8 · ESPECIALISTA ===================== -->
     <section class="section especialista" id="especialista">
       <div class="container esp-grid">
+        <div class="esp-copy">
+          <span class="eyebrow">Quem conduz o dia</span>
+          <h2 class="esp-name">Manoel Augusto</h2>
+          <ul class="esp-list">
+            <li>Terapeuta há <strong>18 anos</strong>, com <strong>13</strong> dedicados à terapia somática pré e perinatal.</li>
+            <li>Único terapeuta do Brasil formado diretamente por <strong>William R. Emerson</strong>, um dos fundadores do campo.</li>
+            <li>Treinado pelo próprio Emerson para transmitir sua abordagem de atuar em traumas de gestação e nascimento.</li>
+            <li>Criador da maior formação em cura de feridas pré e perinatais da América Latina.</li>
+          </ul>
+          <p class="esp-quote">
+            Atendimentos mais profundos não vêm de novas técnicas. Vêm de saber onde e como olhar.
+          </p>
+          <a href="#preco" class="btn btn-primary">Quero garantir minha vaga</a>
+          <p class="esp-note">[Manter o restante do currículo já validado nas páginas anteriores, sem reescrita.]</p>
+        </div>
         <div class="esp-visual">
           <div class="portrait portrait-sm" role="img" aria-label="Manoel Augusto">
             <span class="portrait-label">Manoel Augusto</span>
           </div>
-        </div>
-        <div class="esp-copy">
-          <span class="eyebrow">Sobre o especialista</span>
-          <h2 class="section-title">Sobre Manoel Augusto</h2>
-          <p>
-            Manoel Augusto é terapeuta há <strong>18 anos</strong>, com <strong>13</strong> dedicados à terapia somática
-            pré e perinatal. É o único terapeuta do Brasil formado diretamente por <strong>William R. Emerson</strong>,
-            um dos fundadores do campo da psicologia pré e perinatal, e treinado por ele para transmitir sua
-            abordagem única de compreender e atuar em traumas de gestação e nascimento.
-          </p>
-          <p>
-            Com base nesses pilares, criou a maior formação em cura de feridas pré e perinatais da América Latina.
-          </p>
-          <p class="esp-note">[Manter o restante do currículo já validado nas páginas anteriores, sem reescrita.]</p>
+          <div class="stat-card stat-a">
+            <span class="stat-num">18</span>
+            <span class="stat-label">anos de clínica</span>
+          </div>
+          <div class="stat-card stat-b">
+            <span class="stat-num">13</span>
+            <span class="stat-label">anos em gestação e nascimento</span>
+          </div>
         </div>
       </div>
     </section>
