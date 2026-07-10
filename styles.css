@@ -44,6 +44,7 @@ img { max-width: 100%; display: block; }
 
 .wrap { width: 100%; max-width: var(--maxw); margin: 0 auto; padding: 0 24px; }
 .section { padding: clamp(64px, 8vw, 120px) 0; }
+section[id], [id] { scroll-margin-top: 90px; }
 
 .eyebrow { display: inline-block; font-weight: 600; font-size: .76rem; letter-spacing: .18em; text-transform: uppercase; color: var(--terracotta); margin-bottom: 16px; }
 .tag { display: inline-block; background: var(--white); border: 1px solid var(--line); color: var(--ink-soft); font-weight: 500; font-size: .8rem; padding: 8px 16px; border-radius: 100px; box-shadow: var(--shadow-soft); }
@@ -132,8 +133,11 @@ h2 { font-weight: 600; font-size: clamp(1.75rem, 3.6vw, 2.7rem); line-height: 1.
 /* ============================ O DIA ============================ */
 .dia { background: var(--white); }
 .dia-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 26px; }
-.dia-card { background: var(--cream); border: 1px solid var(--line); border-radius: var(--radius-lg); padding: 40px 38px; }
+.dia-card { background: var(--cream); border: 1px solid var(--line); border-radius: var(--radius-lg); padding: 0; overflow: hidden; }
 .dia-card.accent { background: linear-gradient(165deg, var(--peach-tint), var(--white)); border-color: var(--peach-soft); }
+.dia-img { margin: 0; }
+.dia-img img { width: 100%; aspect-ratio: 16/9; object-fit: cover; display: block; }
+.dia-body { padding: 34px 38px 40px; }
 .dia-tag { display: inline-block; font-weight: 700; font-size: .74rem; letter-spacing: .16em; text-transform: uppercase; color: var(--terracotta); border: 1px solid var(--peach); padding: 6px 14px; border-radius: 100px; margin-bottom: 16px; }
 .dia-card h3 { font-weight: 600; font-size: 1.7rem; letter-spacing: -.02em; margin: 0 0 12px; }
 .dia-lead { color: var(--ink-soft); margin: 0 0 22px; font-size: 1.02rem; }
