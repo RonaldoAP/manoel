@@ -65,7 +65,7 @@
 
   /* --- Reveal ao rolar --- */
   var targets = document.querySelectorAll(
-    '.ctx-title, .ctx-cols, .ctx-pull, .head, .raz, .learn-card, .dia-block, .browser, .testi, .compare-item, .offer, .faq-item, .manoel-copy, .manoel-visual, .final h2'
+    '.hero-copy, .hero-photo, .cred, .ctx-photo, .ctx-text, .head, .aprender-aside, .learn-list li, .dia-card, .browser, .testi, .preco-info, .preco-card, .faq-item, .manoel-photo, .manoel-copy, .final h2'
   );
   targets.forEach(function (el) { el.classList.add('reveal'); });
 
