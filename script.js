@@ -1,23 +1,13 @@
-/* Terapeuta 360 · interações leves */
+/* Terapeuta 360 · editorial · interações leves */
 (function () {
   'use strict';
 
-  /* --- Ano no rodapé --- */
   var yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-  /* --- Header sombra ao rolar --- */
-  var header = document.getElementById('siteHeader');
-  var onScroll = function () {
-    if (window.scrollY > 12) header.classList.add('scrolled');
-    else header.classList.remove('scrolled');
-  };
-  window.addEventListener('scroll', onScroll, { passive: true });
-  onScroll();
-
-  /* --- Menu mobile --- */
+  /* --- Menu mobile (rail) --- */
   var toggle = document.getElementById('navToggle');
-  var nav = document.getElementById('mainNav');
+  var nav = document.getElementById('railNav');
   if (toggle && nav) {
     toggle.addEventListener('click', function () {
       var open = nav.classList.toggle('open');
@@ -63,13 +53,13 @@
       var card = track.querySelector('.video-card');
       return card ? card.getBoundingClientRect().width + 20 : 320;
     };
-    prev.addEventListener('click', function () { track.scrollBy({ left: -step(), behavior: 'smooth' }); });
-    next.addEventListener('click', function () { track.scrollBy({ left: step(), behavior: 'smooth' }); });
+    if (prev) prev.addEventListener('click', function () { track.scrollBy({ left: -step(), behavior: 'smooth' }); });
+    if (next) next.addEventListener('click', function () { track.scrollBy({ left: step(), behavior: 'smooth' }); });
   }
 
   /* --- Reveal ao rolar --- */
   var targets = document.querySelectorAll(
-    '.section-head, .hero-copy, .learn-card, .day-card, .video-card, .testi-card, .deliver-item, .price-card, .faq-item, .esp-copy, .esp-visual, .ctx-copy, .ctx-visual, .credbar'
+    '.hero-title, .hero-bottom, .band-portrait, .band-stats li, .chapter-head, .chapter-title, .chapter-text, .pull, .learn-list li, .tl-step, .video-card, .quotes figure, .deliver-list li, .notfor, .invest-anchor, .invest-price, .faq-item, .manoel-visual, .manoel-copy, .final'
   );
   targets.forEach(function (el) { el.classList.add('reveal'); });
 
@@ -81,9 +71,28 @@
           io.unobserve(entry.target);
         }
       });
-    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
     targets.forEach(function (el) { io.observe(el); });
   } else {
     targets.forEach(function (el) { el.classList.add('in'); });
+  }
+
+  /* --- Highlight da seção ativa no rail --- */
+  var links = Array.prototype.slice.call(document.querySelectorAll('.rail-nav a'));
+  var sections = links.map(function (l) { return document.querySelector(l.getAttribute('href')); });
+  if ('IntersectionObserver' in window && sections.filter(Boolean).length) {
+    var spy = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          links.forEach(function (l) { l.style.color = ''; l.querySelector('.idx').style.color = ''; });
+          var i = sections.indexOf(entry.target);
+          if (i > -1) {
+            links[i].style.color = 'var(--terracotta)';
+            links[i].querySelector('.idx').style.color = 'var(--terracotta)';
+          }
+        }
+      });
+    }, { rootMargin: '-45% 0px -50% 0px' });
+    sections.forEach(function (s) { if (s) spy.observe(s); });
   }
 })();
