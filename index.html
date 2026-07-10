@@ -12,256 +12,309 @@
 </head>
 <body id="top">
 
-<div class="layout">
-
-  <!-- ===================== SIDE RAIL ===================== -->
-  <aside class="rail">
-    <div class="rail-top">
+  <!-- ===================== HEADER ===================== -->
+  <header class="hdr" id="hdr">
+    <div class="wrap hdr-in">
       <a href="#top" class="brand">
         <span class="brand-mark">T<span class="brand-360">360</span></span>
         <span class="brand-name">Terapeuta 360</span>
       </a>
+      <nav class="nav" id="nav">
+        <a href="#contexto">O contexto</a>
+        <a href="#aprender">O que você aprende</a>
+        <a href="#dia">O dia</a>
+        <a href="#manoel">Manoel</a>
+        <a href="#preco" class="nav-cta">Garantir vaga</a>
+      </nav>
       <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
+  </header>
 
-    <nav class="rail-nav" id="railNav">
-      <a href="#contexto"><span class="idx">01</span><span>O contexto</span></a>
-      <a href="#aprender"><span class="idx">02</span><span>O que você aprende</span></a>
-      <a href="#dia"><span class="idx">03</span><span>O dia</span></a>
-      <a href="#midia"><span class="idx">04</span><span>Na mídia</span></a>
-      <a href="#prova"><span class="idx">05</span><span>Quem esteve lá</span></a>
-      <a href="#investimento"><span class="idx">06</span><span>Investimento</span></a>
-      <a href="#manoel"><span class="idx">07</span><span>Manoel Augusto</span></a>
-    </nav>
-
-    <div class="rail-foot">
-      <a href="#investimento" class="btn btn-primary btn-block">Quero o meu mapa</a>
-      <p class="rail-meta">Online, ao vivo · [inserir data]<br>Vagas limitadas</p>
-    </div>
-  </aside>
-
-  <!-- ===================== CONTENT ===================== -->
-  <div class="content">
-
-    <!-- HERO -->
-    <header class="hero">
-      <div class="hero-meta-top">
+  <!-- ===================== HERO ===================== -->
+  <section class="hero">
+    <div class="wrap hero-in">
+      <div class="hero-copy">
         <span class="tag">Para terapeutas e psicólogos com prática clínica ativa</span>
-        <span class="hero-when">[data] · Online, ao vivo</span>
-      </div>
-
-      <h1 class="hero-title">
-        Em um dia, receba o <em>mapa</em> para reconhecer os registros de gestação e nascimento que seus pacientes já mostram em cada sessão,
-        <span class="soft">mas que a maioria dos terapeutas nunca foi ensinada a ler.</span>
-      </h1>
-
-      <div class="hero-bottom">
-        <p class="hero-sub">
-          Atendimentos mais profundos e mais precisos não vêm de novas técnicas. Vêm de saber onde e como olhar.
-        </p>
-        <a href="#investimento" class="btn btn-primary">Quero o meu mapa &#8594;</a>
-      </div>
-    </header>
-
-    <!-- PORTRAIT BAND + CREDIBILIDADE -->
-    <section class="band">
-      <div class="band-portrait" role="img" aria-label="Manoel Augusto">
-        <span class="portrait-label">Manoel Augusto</span>
-      </div>
-      <ul class="band-stats">
-        <li>
-          <span class="stat-num">18<span class="stat-unit">anos</span></span>
-          <span class="stat-desc">de clínica</span>
-        </li>
-        <li>
-          <span class="stat-num">13<span class="stat-unit">anos</span></span>
-          <span class="stat-desc">dedicados a gestação e nascimento</span>
-        </li>
-        <li>
-          <span class="stat-num stat-num--sm">Único</span>
-          <span class="stat-desc">terapeuta do Brasil formado diretamente por William R. Emerson</span>
-        </li>
-      </ul>
-    </section>
-
-    <!-- 01 · CONTEXTO -->
-    <section class="chapter" id="contexto">
-      <div class="chapter-head">
-        <span class="chapter-idx">01</span>
-        <span class="eyebrow">O contexto</span>
-      </div>
-      <div class="chapter-body two-col">
-        <h2 class="chapter-title">O padrão que resiste não está na infância, nem no transgeracional</h2>
-        <div class="chapter-text">
-          <p>Seu paciente entende a origem do problema. Já fez o trabalho na infância, no transgeracional, na queixa que ele mesmo trouxe. Sente alívio na sessão. E na semana seguinte, o padrão está de volta.</p>
-          <p>Isso acontece porque uma parte decisiva do que molda um comportamento nunca vira lembrança. Fica registrada como memória implícita, formada na gestação e no nascimento, antes da linguagem existir. Entender a história não é o mesmo que elaborar o que ficou registrado nela.</p>
-          <p class="para-quem"><span>Para quem é</span> terapeutas, psicólogos e consteladores com prática clínica ativa que já fazem um bom trabalho e sentem que falta uma camada.</p>
+        <h1>Em um dia, receba o <em>mapa</em> para reconhecer os registros de gestação e nascimento que seus pacientes já mostram em cada sessão.</h1>
+        <p class="hero-sub">A maioria dos terapeutas nunca foi ensinada a ler esses sinais. Atendimentos mais profundos e mais precisos não vêm de novas técnicas. Vêm de saber onde e como olhar.</p>
+        <div class="hero-cta">
+          <a href="#preco" class="btn btn-primary btn-lg">Quero o meu mapa &#8594;</a>
+          <div class="hero-meta">
+            <strong>[inserir data]</strong>
+            <span>Online, ao vivo · Vagas limitadas</span>
+          </div>
         </div>
       </div>
-      <blockquote class="pull">A infância e o transgeracional confirmam o padrão. Não é onde ele começa.</blockquote>
-    </section>
-
-    <!-- 02 · O QUE VOCÊ VAI APRENDER -->
-    <section class="chapter" id="aprender">
-      <div class="chapter-head">
-        <span class="chapter-idx">02</span>
-        <span class="eyebrow">O que muda na sua clínica</span>
+      <div class="hero-photo">
+        <div class="photo" role="img" aria-label="Manoel Augusto">
+          <span class="photo-label">Manoel Augusto</span>
+        </div>
+        <span class="chip chip-1">"sem saída"</span>
+        <span class="chip chip-2">"sempre pressionado"</span>
+        <span class="chip chip-3">memória implícita</span>
       </div>
-      <h2 class="chapter-title wide">O que você vai sair sabendo fazer</h2>
-      <ol class="learn-list">
-        <li>
-          <span class="ll-num">01</span>
-          <p>Reconhecer, na fala espontânea do paciente, as expressões que apontam para um estágio específico do nascimento (como <em>"sem saída"</em>, <em>"sempre pressionado"</em>, <em>"não faço nada direito"</em>).</p>
-        </li>
-        <li>
-          <span class="ll-num">02</span>
-          <p>Identificar sinais físicos de compressão do parto que ficam registrados e visíveis, e o que eles indicam.</p>
-        </li>
-        <li>
-          <span class="ll-num">03</span>
-          <p>Diferenciar as quatro formas de recapitulação de um trauma precoce (direta, evitativa, por identificação e confrontativa) no relato de qualquer paciente.</p>
-        </li>
-        <li>
-          <span class="ll-num">04</span>
-          <p>Entender por que a ressignificação, sozinha, não resolve um padrão, e a diferença entre regressões saudáveis e regressões problemáticas.</p>
-        </li>
-        <li>
-          <span class="ll-num">05</span>
-          <p>Saber quando avançar e quando recuar diante da janela de tolerância do sistema nervoso, para não retraumatizar.</p>
-        </li>
-        <li>
-          <span class="ll-num">06</span>
-          <p>Reconhecer, na sua própria história de gestação e nascimento, o que ainda organiza a forma como você conduz sua clínica.</p>
-        </li>
-      </ol>
-    </section>
+    </div>
 
-    <!-- 03 · O DIA -->
-    <section class="chapter" id="dia">
-      <div class="chapter-head">
-        <span class="chapter-idx">03</span>
-        <span class="eyebrow">Como o dia é estruturado</span>
+    <div class="wrap">
+      <ul class="cred">
+        <li><strong>18 anos</strong><span>de clínica</span></li>
+        <li><strong>13 anos</strong><span>dedicados a gestação e nascimento</span></li>
+        <li><strong>Único no Brasil</strong><span>formado por William R. Emerson</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===================== MARQUEE ===================== -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Terapeuta 360</span><span class="mq-dot">◆</span>
+      <span>Gestação e nascimento</span><span class="mq-dot">◆</span>
+      <span>Memória implícita</span><span class="mq-dot">◆</span>
+      <span>Prática clínica</span><span class="mq-dot">◆</span>
+      <span>Terapeuta 360</span><span class="mq-dot">◆</span>
+      <span>Gestação e nascimento</span><span class="mq-dot">◆</span>
+      <span>Memória implícita</span><span class="mq-dot">◆</span>
+      <span>Prática clínica</span><span class="mq-dot">◆</span>
+    </div>
+  </div>
+
+  <!-- ===================== CONTEXTO (imagem + texto) ===================== -->
+  <section class="section ctx" id="contexto">
+    <div class="wrap ctx-in">
+      <div class="ctx-photo">
+        <div class="photo photo-tall" role="img" aria-label="Sessão de terapia">
+          <span class="photo-label">Em cada sessão</span>
+        </div>
+        <div class="ctx-float">
+          <strong>antes da linguagem</strong>
+          <span>é onde o padrão se forma</span>
+        </div>
       </div>
-      <h2 class="chapter-title wide">Um dia, dois movimentos</h2>
+      <div class="ctx-text">
+        <span class="eyebrow">O contexto</span>
+        <h2>O padrão que resiste não está na infância, nem no transgeracional</h2>
+        <p>Seu paciente entende a origem do problema. Já fez o trabalho na infância, no transgeracional, na queixa que ele mesmo trouxe. Sente alívio na sessão. E na semana seguinte, o padrão está de volta.</p>
+        <p>Isso acontece porque uma parte decisiva do que molda um comportamento nunca vira lembrança. Fica registrada como memória implícita, formada na gestação e no nascimento, antes da linguagem existir. Entender a história não é o mesmo que elaborar o que ficou registrado nela.</p>
+        <p class="ctx-pull">A infância e o transgeracional confirmam o padrão. Não é onde ele começa.</p>
+      </div>
+    </div>
+  </section>
 
-      <div class="timeline">
-        <article class="tl-step">
-          <div class="tl-marker"><span>Manhã</span></div>
-          <div class="tl-content">
-            <h3>O campo</h3>
-            <p class="tl-lead">O campo que seus pacientes já estão mostrando e que você ainda não foi ensinado a ler.</p>
-            <ul>
-              <li>Por que alguns padrões resistem a tudo que já foi tentado, e onde estão as raízes.</li>
-              <li>A diferença entre memória narrativa e memória implícita.</li>
-              <li>Os principais registros de gestação e nascimento e como se apresentam no adulto.</li>
-              <li>As pistas que o paciente já traz em cada sessão, nas palavras, nos gestos, no corpo.</li>
-            </ul>
-            <p class="tl-outcome">Ao final da manhã: você tem o mapa do campo. Sabe o que está procurando.</p>
-          </div>
+  <!-- ===================== PARA QUEM É (cards) ===================== -->
+  <section class="section paraquem">
+    <div class="wrap">
+      <div class="head center">
+        <span class="eyebrow">Para quem é</span>
+        <h2>Feito para quem já atende e sente que falta uma camada</h2>
+      </div>
+      <div class="pq-grid">
+        <article class="pq-card">
+          <span class="pq-ico">◍</span>
+          <h3>Terapeutas</h3>
+          <p>Com prática clínica ativa, que já fazem um bom trabalho e querem ler o que ainda passa batido.</p>
         </article>
-
-        <article class="tl-step">
-          <div class="tl-marker dark"><span>Tarde</span></div>
-          <div class="tl-content">
-            <h3>O manejo</h3>
-            <p class="tl-lead">Como chegar lá com precisão, sem retraumatizar e sem abandonar o que você já construiu.</p>
-            <ul>
-              <li>A diferença entre regressões saudáveis e regressões problemáticas.</li>
-              <li>Como conduzir dentro da janela de tolerância quando o material pré e perinatal emerge.</li>
-              <li>Como essa leitura se instala sobre o que você já faz, sem substituir sua abordagem.</li>
-              <li>O que a sua própria história ainda organiza na condução da sua clínica.</li>
-            </ul>
-            <p class="tl-outcome">Ao final do dia: você tem o mapa e o critério clínico para usá-lo na semana seguinte.</p>
-          </div>
+        <article class="pq-card">
+          <span class="pq-ico">◍</span>
+          <h3>Psicólogos</h3>
+          <p>Que percebem padrões resistentes voltando semana após semana e querem entender de onde vêm.</p>
+        </article>
+        <article class="pq-card">
+          <span class="pq-ico">◍</span>
+          <h3>Consteladores</h3>
+          <p>Que trabalham origem e transgeracional e sentem que falta a camada de gestação e nascimento.</p>
         </article>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- 04 · NA MÍDIA -->
-    <section class="chapter" id="midia">
-      <div class="chapter-head">
-        <span class="chapter-idx">04</span>
-        <span class="eyebrow">Na mídia</span>
-      </div>
-      <h2 class="chapter-title wide">Manoel em entrevistas</h2>
-      <div class="carousel" id="mediaCarousel">
-        <div class="carousel-track" id="mediaTrack">
-          <div class="video-card"><span class="play">&#9658;</span><span class="video-label">Entrevista 01</span></div>
-          <div class="video-card"><span class="play">&#9658;</span><span class="video-label">Entrevista 02</span></div>
-          <div class="video-card"><span class="play">&#9658;</span><span class="video-label">Entrevista 03</span></div>
-          <div class="video-card"><span class="play">&#9658;</span><span class="video-label">Entrevista 04</span></div>
+  <!-- ===================== O QUE VOCÊ VAI APRENDER (carrossel de cards) ===================== -->
+  <section class="section aprender" id="aprender">
+    <div class="wrap">
+      <div class="head between">
+        <div>
+          <span class="eyebrow">O que muda na sua clínica</span>
+          <h2>O que você vai sair sabendo fazer</h2>
         </div>
         <div class="carousel-nav">
-          <button class="carousel-btn prev" aria-label="Anterior">&#8592;</button>
-          <button class="carousel-btn next" aria-label="Próximo">&#8594;</button>
+          <button class="carousel-btn prev" data-track="learnTrack" aria-label="Anterior">&#8592;</button>
+          <button class="carousel-btn next" data-track="learnTrack" aria-label="Próximo">&#8594;</button>
         </div>
       </div>
-      <p class="fine-note">Espaço reservado para os vídeos de entrevistas do Manoel.</p>
-    </section>
+    </div>
+    <div class="wrap-bleed">
+      <div class="carousel-track" id="learnTrack">
+        <article class="learn-card">
+          <div class="learn-img img-a"><span class="learn-num">01</span></div>
+          <p>Reconhecer, na fala espontânea, as expressões que apontam para um estágio específico do nascimento (como <em>"sem saída"</em>, <em>"sempre pressionado"</em>, <em>"não faço nada direito"</em>).</p>
+        </article>
+        <article class="learn-card">
+          <div class="learn-img img-b"><span class="learn-num">02</span></div>
+          <p>Identificar sinais físicos de compressão do parto que ficam registrados e visíveis, e o que eles indicam.</p>
+        </article>
+        <article class="learn-card">
+          <div class="learn-img img-c"><span class="learn-num">03</span></div>
+          <p>Diferenciar as quatro formas de recapitulação de um trauma precoce (direta, evitativa, por identificação e confrontativa) no relato de qualquer paciente.</p>
+        </article>
+        <article class="learn-card">
+          <div class="learn-img img-d"><span class="learn-num">04</span></div>
+          <p>Entender por que a ressignificação, sozinha, não resolve um padrão, e a diferença entre regressões saudáveis e problemáticas.</p>
+        </article>
+        <article class="learn-card">
+          <div class="learn-img img-e"><span class="learn-num">05</span></div>
+          <p>Saber quando avançar e quando recuar diante da janela de tolerância do sistema nervoso, para não retraumatizar.</p>
+        </article>
+        <article class="learn-card">
+          <div class="learn-img img-f"><span class="learn-num">06</span></div>
+          <p>Reconhecer, na sua própria história de gestação e nascimento, o que ainda organiza a forma como você conduz sua clínica.</p>
+        </article>
+      </div>
+    </div>
+  </section>
 
-    <!-- 05 · PROVA SOCIAL -->
-    <section class="chapter" id="prova">
-      <div class="chapter-head">
-        <span class="chapter-idx">05</span>
+  <!-- ===================== O DIA (Manhã / Tarde) ===================== -->
+  <section class="section dia" id="dia">
+    <div class="wrap">
+      <div class="head center">
+        <span class="eyebrow">Como o dia é estruturado</span>
+        <h2>Um dia, dois movimentos</h2>
+      </div>
+      <div class="dia-grid">
+        <article class="dia-card">
+          <span class="dia-tag">Manhã</span>
+          <h3>O campo</h3>
+          <p class="dia-lead">O campo que seus pacientes já estão mostrando e que você ainda não foi ensinado a ler.</p>
+          <ul>
+            <li>Por que alguns padrões resistem a tudo que já foi tentado, e onde estão as raízes.</li>
+            <li>A diferença entre memória narrativa e memória implícita.</li>
+            <li>Os principais registros de gestação e nascimento e como se apresentam no adulto.</li>
+            <li>As pistas que o paciente já traz em cada sessão, nas palavras, nos gestos, no corpo.</li>
+          </ul>
+          <p class="dia-out">Ao final da manhã: você tem o mapa do campo. Sabe o que está procurando.</p>
+        </article>
+        <article class="dia-card dark">
+          <span class="dia-tag">Tarde</span>
+          <h3>O manejo</h3>
+          <p class="dia-lead">Como chegar lá com precisão, sem retraumatizar e sem abandonar o que você já construiu.</p>
+          <ul>
+            <li>A diferença entre regressões saudáveis e regressões problemáticas.</li>
+            <li>Como conduzir dentro da janela de tolerância quando o material pré e perinatal emerge.</li>
+            <li>Como essa leitura se instala sobre o que você já faz, sem substituir sua abordagem.</li>
+            <li>O que a sua própria história ainda organiza na condução da sua clínica.</li>
+          </ul>
+          <p class="dia-out">Ao final do dia: você tem o mapa e o critério clínico para usá-lo na semana seguinte.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== NA MÍDIA (mockup navegador) ===================== -->
+  <section class="section midia" id="midia">
+    <div class="wrap">
+      <div class="head center">
+        <span class="eyebrow">Na mídia</span>
+        <h2>Manoel em entrevistas</h2>
+      </div>
+      <div class="browser">
+        <div class="browser-bar"><span></span><span></span><span></span><em>entrevistas · terapeuta 360</em></div>
+        <div class="browser-body">
+          <div class="carousel-track" id="mediaTrack">
+            <div class="video-card"><span class="play">&#9658;</span><span class="video-label">Entrevista 01</span></div>
+            <div class="video-card"><span class="play">&#9658;</span><span class="video-label">Entrevista 02</span></div>
+            <div class="video-card"><span class="play">&#9658;</span><span class="video-label">Entrevista 03</span></div>
+            <div class="video-card"><span class="play">&#9658;</span><span class="video-label">Entrevista 04</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-nav center">
+        <button class="carousel-btn prev" data-track="mediaTrack" aria-label="Anterior">&#8592;</button>
+        <button class="carousel-btn next" data-track="mediaTrack" aria-label="Próximo">&#8594;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROVA SOCIAL ===================== -->
+  <section class="section prova">
+    <div class="wrap">
+      <div class="head center">
         <span class="eyebrow">Prova social</span>
+        <h2>Quem já esteve lá</h2>
       </div>
-      <h2 class="chapter-title wide">Quem já esteve lá</h2>
-      <div class="quotes">
-        <figure>
+      <div class="testi-grid">
+        <figure class="testi">
+          <div class="stars">★★★★★</div>
           <blockquote>Percebi que os sinais sempre estiveram ali, em quase toda sessão. Eu simplesmente não sabia nomear o que estava vendo.</blockquote>
-          <figcaption><strong>[Nome]</strong> · Terapeuta</figcaption>
+          <figcaption><span class="avatar">N</span><span><strong>[Nome]</strong>Terapeuta</span></figcaption>
         </figure>
-        <figure>
+        <figure class="testi">
+          <div class="stars">★★★★★</div>
           <blockquote>Mudou a forma como eu escuto. Hoje eu ouço a fala do paciente e reconheço a camada que antes passava batido.</blockquote>
-          <figcaption><strong>[Nome]</strong> · Psicóloga</figcaption>
+          <figcaption><span class="avatar">N</span><span><strong>[Nome]</strong>Psicóloga</span></figcaption>
         </figure>
-        <figure>
+        <figure class="testi">
+          <div class="stars">★★★★★</div>
           <blockquote>Não substituiu o que eu já fazia. Se somou. Meus atendimentos ficaram mais precisos sem que eu abandonasse minha abordagem.</blockquote>
-          <figcaption><strong>[Nome]</strong> · Consteladora</figcaption>
+          <figcaption><span class="avatar">N</span><span><strong>[Nome]</strong>Consteladora</span></figcaption>
         </figure>
       </div>
-      <p class="fine-note">Depoimentos a serem substituídos pelos já validados nas páginas anteriores.</p>
-    </section>
+      <p class="fine-note center">Depoimentos a serem substituídos pelos já validados nas páginas anteriores.</p>
+    </div>
+  </section>
 
-    <!-- ENTREGÁVEIS -->
-    <section class="chapter" id="entregaveis">
-      <div class="chapter-head">
-        <span class="chapter-idx">&#9670;</span>
+  <!-- ===================== ENTREGÁVEIS ===================== -->
+  <section class="section entrega">
+    <div class="wrap entrega-in">
+      <div class="entrega-copy">
         <span class="eyebrow">O que fica com você</span>
-      </div>
-      <h2 class="chapter-title wide">O que fica com você depois desse dia</h2>
-      <div class="deliver two-col">
-        <ul class="deliver-list">
+        <h2>O que fica com você depois desse dia</h2>
+        <ul class="check">
           <li>O mapa clínico para reconhecer registros de gestação e nascimento em sessão.</li>
           <li>O critério para avançar ou recuar sem retraumatizar.</li>
           <li>A leitura das quatro formas de recapitulação, aplicável a qualquer paciente da sua agenda atual.</li>
           <li>Um exercício de reconhecimento aplicado à sua própria história.</li>
         </ul>
-        <aside class="notfor">
-          <span class="notfor-tag">Não é para quem</span>
-          <p>busca uma fórmula única aplicável a todos os pacientes da mesma forma, ou ainda não tem prática clínica regular.</p>
-        </aside>
       </div>
-    </section>
+      <aside class="notfor">
+        <span class="notfor-tag">Não é para quem</span>
+        <p>busca uma fórmula única aplicável a todos os pacientes da mesma forma, ou ainda não tem prática clínica regular.</p>
+      </aside>
+    </div>
+  </section>
 
-    <!-- 06 · INVESTIMENTO -->
-    <section class="invest" id="investimento">
-      <div class="invest-idx"><span class="chapter-idx light">06</span><span class="eyebrow light">Investimento</span></div>
-      <div class="invest-grid">
-        <div class="invest-anchor">
-          <p>Uma sessão individual com Manoel custa <strong>R$ 1.370</strong>. Em um dia de imersão, você recebe o mapa que muda a forma como você conduz cada uma das suas próximas sessões, não só uma.</p>
+  <!-- ===================== PREÇO ===================== -->
+  <section class="section preco" id="preco">
+    <div class="wrap">
+      <div class="head center">
+        <span class="eyebrow">Investimento</span>
+        <h2>Um dia que muda cada uma das suas próximas sessões</h2>
+      </div>
+      <div class="preco-grid">
+        <div class="preco-anchor">
+          <p>Uma sessão individual com Manoel custa</p>
+          <span class="anchor-price">R$ 1.370</span>
+          <p>Em um dia de imersão, você recebe o mapa que muda a forma como conduz <strong>cada uma</strong> das suas próximas sessões, não só uma.</p>
+          <div class="guarantee">
+            <div class="seal"><strong>7</strong><span>dias</span></div>
+            <p><strong>Garantia incondicional.</strong> Se não fizer sentido, é só avisar dentro do prazo.</p>
+          </div>
         </div>
-        <div class="invest-price">
+        <div class="preco-card">
           <span class="lote">Lote 0</span>
-          <div class="price-value"><span class="price-cur">R$</span><span class="price-num">37</span></div>
-          <a href="#" class="btn btn-primary btn-block">Quero garantir minha vaga</a>
-          <span class="price-safe">Online, ao vivo · Vagas limitadas</span>
+          <div class="price"><span class="cur">R$</span><span class="num">37</span></div>
+          <ul class="check tight">
+            <li>Imersão de um dia, online e ao vivo</li>
+            <li>O mapa clínico dos registros de gestação e nascimento</li>
+            <li>Critério para avançar ou recuar sem retraumatizar</li>
+            <li>Exercício aplicado à sua própria história</li>
+          </ul>
+          <a href="#" class="btn btn-primary btn-block btn-lg">Quero garantir minha vaga</a>
+          <span class="safe">Online, ao vivo · Vagas limitadas</span>
         </div>
       </div>
 
       <div class="faq">
+        <h3 class="faq-title">Perguntas frequentes</h3>
         <div class="faq-item">
           <button class="faq-q">Preciso ter experiência com psicologia pré e perinatal?<span class="faq-icon">+</span></button>
           <div class="faq-a"><p>Não. O dia foi construído para quem já atende e quer incluir essa camada na leitura que já faz.</p></div>
@@ -275,44 +328,52 @@
           <div class="faq-a"><p>Não. É a entrada nesse campo, com um mapa aplicável desde o primeiro atendimento depois do evento.</p></div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- 07 · MANOEL -->
-    <section class="chapter" id="manoel">
-      <div class="chapter-head">
-        <span class="chapter-idx">07</span>
+  <!-- ===================== MANOEL ===================== -->
+  <section class="section manoel" id="manoel">
+    <div class="wrap manoel-in">
+      <div class="manoel-copy">
         <span class="eyebrow">Quem conduz o dia</span>
+        <h2 class="manoel-name">Manoel Augusto</h2>
+        <ul class="check">
+          <li>Terapeuta há <strong>18 anos</strong>, com <strong>13</strong> dedicados à terapia somática pré e perinatal.</li>
+          <li>Único terapeuta do Brasil formado diretamente por <strong>William R. Emerson</strong>, um dos fundadores do campo.</li>
+          <li>Treinado pelo próprio Emerson para transmitir sua abordagem de atuar em traumas de gestação e nascimento.</li>
+          <li>Criador da maior formação em cura de feridas pré e perinatais da América Latina.</li>
+        </ul>
+        <a href="#preco" class="btn btn-primary btn-lg">Quero garantir minha vaga</a>
+        <p class="fine-note">[Manter o restante do currículo já validado nas páginas anteriores, sem reescrita.]</p>
       </div>
-      <div class="manoel-grid">
-        <div class="manoel-visual" role="img" aria-label="Manoel Augusto">
-          <span class="portrait-label">Manoel Augusto</span>
+      <div class="manoel-visual">
+        <div class="photo photo-tall" role="img" aria-label="Manoel Augusto">
+          <span class="photo-label">Manoel Augusto</span>
         </div>
-        <div class="manoel-copy">
-          <h2 class="manoel-name">Manoel Augusto</h2>
-          <p>Terapeuta há <strong>18 anos</strong>, com <strong>13</strong> dedicados à terapia somática pré e perinatal. É o único terapeuta do Brasil formado diretamente por <strong>William R. Emerson</strong>, um dos fundadores do campo da psicologia pré e perinatal, e treinado por ele para transmitir sua abordagem única de compreender e atuar em traumas de gestação e nascimento.</p>
-          <p>Com base nesses pilares, criou a maior formação em cura de feridas pré e perinatais da América Latina.</p>
-          <p class="fine-note">[Manter o restante do currículo já validado nas páginas anteriores, sem reescrita.]</p>
-        </div>
+        <div class="stat-card stat-a"><strong>18</strong><span>anos de clínica</span></div>
+        <div class="stat-card stat-b"><strong>13</strong><span>anos em gestação e nascimento</span></div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- FINAL CTA -->
-    <section class="final">
-      <h2>O mapa que muda cada uma das suas próximas sessões.</h2>
+  <!-- ===================== FINAL CTA ===================== -->
+  <section class="final">
+    <div class="wrap">
+      <h2>O mapa que muda cada uma das suas próximas sessões</h2>
       <p>Em um dia, online e ao vivo, com Manoel Augusto.</p>
-      <a href="#investimento" class="btn btn-primary">Quero o meu mapa &#8594;</a>
-    </section>
+      <a href="#preco" class="btn btn-primary btn-lg">Quero o meu mapa &#8594;</a>
+    </div>
+  </section>
 
-    <!-- FOOTER -->
-    <footer class="foot">
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="foot">
+    <div class="wrap foot-in">
       <span class="brand-mark small">T<span class="brand-360">360</span></span>
       <p>Terapeuta 360 · Manoel Augusto</p>
       <p class="fine">© <span id="year"></span> · Todos os direitos reservados.</p>
-    </footer>
+    </div>
+  </footer>
 
-  </div><!-- /content -->
-</div><!-- /layout -->
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

@@ -1,13 +1,22 @@
-/* Terapeuta 360 · editorial · interações leves */
+/* Terapeuta 360 · página de vendas · interações */
 (function () {
   'use strict';
 
   var yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-  /* --- Menu mobile (rail) --- */
+  /* --- Header sombra ao rolar --- */
+  var hdr = document.getElementById('hdr');
+  var onScroll = function () {
+    if (window.scrollY > 12) hdr.classList.add('scrolled');
+    else hdr.classList.remove('scrolled');
+  };
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  /* --- Menu mobile --- */
   var toggle = document.getElementById('navToggle');
-  var nav = document.getElementById('railNav');
+  var nav = document.getElementById('nav');
   if (toggle && nav) {
     toggle.addEventListener('click', function () {
       var open = nav.classList.toggle('open');
@@ -43,23 +52,20 @@
     });
   });
 
-  /* --- Carrossel de mídia --- */
-  var carousel = document.getElementById('mediaCarousel');
-  if (carousel) {
-    var track = document.getElementById('mediaTrack');
-    var prev = carousel.querySelector('.prev');
-    var next = carousel.querySelector('.next');
-    var step = function () {
-      var card = track.querySelector('.video-card');
-      return card ? card.getBoundingClientRect().width + 20 : 320;
-    };
-    if (prev) prev.addEventListener('click', function () { track.scrollBy({ left: -step(), behavior: 'smooth' }); });
-    if (next) next.addEventListener('click', function () { track.scrollBy({ left: step(), behavior: 'smooth' }); });
-  }
+  /* --- Carrosséis (data-track) --- */
+  document.querySelectorAll('.carousel-btn').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var track = document.getElementById(btn.getAttribute('data-track'));
+      if (!track) return;
+      var card = track.querySelector('.learn-card, .video-card');
+      var step = card ? card.getBoundingClientRect().width + 22 : 320;
+      track.scrollBy({ left: btn.classList.contains('prev') ? -step : step, behavior: 'smooth' });
+    });
+  });
 
   /* --- Reveal ao rolar --- */
   var targets = document.querySelectorAll(
-    '.hero-title, .hero-bottom, .band-portrait, .band-stats li, .chapter-head, .chapter-title, .chapter-text, .pull, .learn-list li, .tl-step, .video-card, .quotes figure, .deliver-list li, .notfor, .invest-anchor, .invest-price, .faq-item, .manoel-visual, .manoel-copy, .final'
+    '.hero-copy, .hero-photo, .cred, .ctx-photo, .ctx-text, .head, .pq-card, .learn-card, .dia-card, .browser, .testi, .entrega-copy, .notfor, .preco-anchor, .preco-card, .faq-item, .manoel-copy, .manoel-visual, .final'
   );
   targets.forEach(function (el) { el.classList.add('reveal'); });
 
@@ -75,24 +81,5 @@
     targets.forEach(function (el) { io.observe(el); });
   } else {
     targets.forEach(function (el) { el.classList.add('in'); });
-  }
-
-  /* --- Highlight da seção ativa no rail --- */
-  var links = Array.prototype.slice.call(document.querySelectorAll('.rail-nav a'));
-  var sections = links.map(function (l) { return document.querySelector(l.getAttribute('href')); });
-  if ('IntersectionObserver' in window && sections.filter(Boolean).length) {
-    var spy = new IntersectionObserver(function (entries) {
-      entries.forEach(function (entry) {
-        if (entry.isIntersecting) {
-          links.forEach(function (l) { l.style.color = ''; l.querySelector('.idx').style.color = ''; });
-          var i = sections.indexOf(entry.target);
-          if (i > -1) {
-            links[i].style.color = 'var(--terracotta)';
-            links[i].querySelector('.idx').style.color = 'var(--terracotta)';
-          }
-        }
-      });
-    }, { rootMargin: '-45% 0px -50% 0px' });
-    sections.forEach(function (s) { if (s) spy.observe(s); });
   }
 })();
